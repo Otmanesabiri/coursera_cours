@@ -1,0 +1,88 @@
+/* projet1.css */
+
+/* Styles par défaut (desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-details p {
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .project-details {
+        padding: 0 20px;
+    }
+
+    .project-details p, .video-container {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
